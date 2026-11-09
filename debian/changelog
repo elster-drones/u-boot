@@ -1,4 +1,4 @@
-u-boot (2025.01-3+deb13u1+elster1) unstable; urgency=medium
+u-boot (2025.01-3+deb13u1+elster2) unstable; urgency=medium
 
   * Add the upstream NanoPi R4S RK3399 target to u-boot-rockchip using the
     existing Debian ARM Trusted Firmware and installation rules.

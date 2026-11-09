@@ -77,7 +77,7 @@ ifeq (${DEB_HOST_ARCH},arm64)
   u-boot-rockchip_platforms += nanopi-r4s-rk3399
   nanopi-r4s-rk3399_assigns := BL31=/usr/lib/arm-trusted-firmware/rk3399/bl31.elf
   nanopi-r4s-rk3399_targets := dts/upstream/src/arm64/rockchip/rk3399-nanopi-r4s.dtb \
-    idbloader.img u-boot.bin u-boot-nodtb.bin u-boot-spl.bin \
+    idbloader.img u-boot.bin u-boot-nodtb.bin spl/u-boot-spl.bin \
     u-boot.itb uboot.elf u-boot-rockchip.bin
 
   u-boot-rockchip_platforms += nanopi-neo4-rk3399
