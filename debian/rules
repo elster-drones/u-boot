@@ -89,6 +89,8 @@ define build_template
 	dh_auto_build -- $(common_make_args) \
 	  O=debian/build/$(platform) \
 	  CROSS_COMPILE=$(or $($(platform)_CROSS_COMPILE),$(CROSS_COMPILE)) \
+	  CC=$(or $($(platform)_CROSS_COMPILE),$(CROSS_COMPILE))gcc \
+	  CXX=$(or $($(platform)_CROSS_COMPILE),$(CROSS_COMPILE))g++ \
 	  $($(package)_assigns) $($(platform)_assigns) \
 	  $(platform)_defconfig
 
@@ -98,6 +100,8 @@ define build_template
 	dh_auto_build -- $(common_make_args) \
 	  O=debian/build/$(platform) \
 	  CROSS_COMPILE=$(or $($(platform)_CROSS_COMPILE),$(CROSS_COMPILE)) \
+	  CC=$(or $($(platform)_CROSS_COMPILE),$(CROSS_COMPILE))gcc \
+	  CXX=$(or $($(platform)_CROSS_COMPILE),$(CROSS_COMPILE))g++ \
 	  $($(package)_assigns) $($(platform)_assigns)
 
     ifneq (,$(filter uboot.elf,$($(platform)_targets)))

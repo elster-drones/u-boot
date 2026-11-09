@@ -1,3 +1,10 @@
+u-boot (2025.01-3+deb13u1+elster3) unstable; urgency=medium
+
+  * Pass each platform's C/C++ compilers explicitly to debhelper, preserving
+    ARM32 firmware targets in an ARM64 cross-package build.
+
+ -- OpenFactory <builds@openfactory.tech>  Mon, 09 Nov 2026 07:40:00 +0000
+
 u-boot (2025.01-3+deb13u1+elster2) unstable; urgency=medium
 
   * Add the upstream NanoPi R4S RK3399 target to u-boot-rockchip using the
